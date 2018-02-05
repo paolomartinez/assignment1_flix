@@ -8,6 +8,7 @@ target 'assignment1_flix' do
   # Pods for assignment1_flix
   	pod 'Alamofire', '~> 4.5'
 	pod 'AlamofireImage', '~> 3.3'
+	pod "KRProgressHUD"
 
   target 'assignment1_flixTests' do
     inherit! :search_paths
