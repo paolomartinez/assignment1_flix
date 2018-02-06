@@ -78,7 +78,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
         
-        // Use a red color when the user selects the cell
+        // Use a gray color when the user selects the cell
         let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor.gray
         cell.selectedBackgroundView = backgroundView
