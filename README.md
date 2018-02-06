@@ -19,7 +19,7 @@ The following **optional** user stories are implemented:
 - [ ] User can search for a movie (+3pt)
 - [ ] While poster is being fetched, user see's a placeholder image (+1pt)
 - [ ] User sees image transition for images coming from network, not when it is loaded from cache (+1pt)
-- [ ] Customize the selection effect of the cell (+1pt)
+- [x] Customize the selection effect of the cell (+1pt)
 - [ ] For the large poster, load the low resolution image first and then switch to the high resolution image when complete (+2pt)
 
 The following **additional** user stories are implemented:
@@ -36,7 +36,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough ](https://media.giphy.com/media/xThta267zZu7YrFgWc/giphy.gif)
+![Video Walkthrough ](https://media.giphy.com/media/d3YHgWsUN0f1Ba9y/giphy.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

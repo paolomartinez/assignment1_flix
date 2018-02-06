@@ -11,7 +11,6 @@ import AlamofireImage
 import KRProgressHUD
 
 class NowPlayingViewController: UIViewController, UITableViewDataSource {
-
     @IBOutlet var tableView: UITableView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
@@ -25,13 +24,15 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         refreshControl.addTarget(self, action: #selector(NowPlayingViewController.didPullToRefresh(_:)), for: .valueChanged)
         tableView.insertSubview(refreshControl, at: 0)
         tableView.dataSource = self
-        //activityIndicator.startAnimating()
+
+        // Sets this view controller as presenting view controller for the search interface
+        definesPresentationContext = true
+        
         KRProgressHUD.show()
         fetchMovies()
         DispatchQueue.main.asyncAfter(deadline: .now()+1) {
             KRProgressHUD.dismiss()
         }
-        //activityIndicator.stopAnimating()
     }
 
     @objc func didPullToRefresh(_ refreshControl: UIRefreshControl) {
@@ -77,6 +78,11 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
         
+        // Use a red color when the user selects the cell
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.gray
+        cell.selectedBackgroundView = backgroundView
+        
         let posterPathString = movie["poster_path"] as! String
         let baseURLString = "https://image.tmdb.org/t/p/w500"
         let posterURL = URL(string: baseURLString + posterPathString)!
@@ -84,7 +90,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         cell.posterImageView.af_setImage(withURL: posterURL)
         return cell
     }
-  
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
