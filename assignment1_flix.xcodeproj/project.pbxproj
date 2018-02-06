@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13788509B2C1F75006E08AC4 /* Pods_assignment1_flixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E3B06FD7DA369E327684D6 /* Pods_assignment1_flixTests.framework */; };
+		732CFE5720299B3400F14948 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732CFE5620299B3400F14948 /* DetailViewController.swift */; };
 		73DBEE1620219BAE00BD31E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBEE1520219BAE00BD31E3 /* AppDelegate.swift */; };
 		73DBEE1B20219BAE00BD31E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DBEE1920219BAE00BD31E3 /* Main.storyboard */; };
 		73DBEE1D20219BAE00BD31E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DBEE1C20219BAE00BD31E3 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		356D626F2737644FDC47109D /* Pods_assignment1_flix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_assignment1_flix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		505BB017A9F93A6E0675CC5C /* Pods_assignment1_flixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_assignment1_flixUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE14B7C7DA5C0582404D372 /* Pods-assignment1_flixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-assignment1_flixTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-assignment1_flixTests/Pods-assignment1_flixTests.debug.xcconfig"; sourceTree = "<group>"; };
+		732CFE5620299B3400F14948 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		73DBEE1220219BAE00BD31E3 /* assignment1_flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = assignment1_flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DBEE1520219BAE00BD31E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73DBEE1A20219BAE00BD31E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,6 +116,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		732CFE542029987A00F14948 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				73DBEE4320227A4400BD31E3 /* NowPlayingViewController.swift */,
+				732CFE5620299B3400F14948 /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		732CFE552029988400F14948 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73EA29CC202464BD007A3917 /* MovieCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		73DBEE0920219BAE00BD31E3 = {
 			isa = PBXGroup;
 			children = (
@@ -139,13 +158,13 @@
 		73DBEE1420219BAE00BD31E3 /* assignment1_flix */ = {
 			isa = PBXGroup;
 			children = (
-				73DBEE4320227A4400BD31E3 /* NowPlayingViewController.swift */,
+				732CFE552029988400F14948 /* Views */,
+				732CFE542029987A00F14948 /* ViewControllers */,
 				73DBEE1520219BAE00BD31E3 /* AppDelegate.swift */,
 				73DBEE1920219BAE00BD31E3 /* Main.storyboard */,
 				73DBEE1C20219BAE00BD31E3 /* Assets.xcassets */,
 				73DBEE1E20219BAE00BD31E3 /* LaunchScreen.storyboard */,
 				73DBEE2120219BAE00BD31E3 /* Info.plist */,
-				73EA29CC202464BD007A3917 /* MovieCell.swift */,
 			);
 			path = assignment1_flix;
 			sourceTree = "<group>";
@@ -470,6 +489,7 @@
 				73DBEE4420227A4400BD31E3 /* NowPlayingViewController.swift in Sources */,
 				73DBEE1620219BAE00BD31E3 /* AppDelegate.swift in Sources */,
 				73EA29CD202464BD007A3917 /* MovieCell.swift in Sources */,
+				732CFE5720299B3400F14948 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
