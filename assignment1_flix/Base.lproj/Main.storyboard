@@ -170,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="-164.80000000000001" y="132.23388305847078"/>
         </scene>
-        <!--View Controller-->
+        <!--Superhero View Controller-->
         <scene sceneID="d9X-eu-Bpw">
             <objects>
-                <viewController id="GQ9-Cj-wfc" sceneMemberID="viewController">
+                <viewController id="GQ9-Cj-wfc" customClass="SuperheroViewController" customModule="assignment1_flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XEt-p9-HHo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,6 +202,9 @@
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="posterImageView" destination="IcM-8h-AtY" id="e4C-xz-tkI"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -210,6 +213,9 @@
                         <viewLayoutGuide key="safeArea" id="ZoT-gv-ClK"/>
                     </view>
                     <navigationItem key="navigationItem" id="nqO-Lb-AHs"/>
+                    <connections>
+                        <outlet property="collectionView" destination="cUH-bw-Biw" id="dqt-y8-PJT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7U-jw-b0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

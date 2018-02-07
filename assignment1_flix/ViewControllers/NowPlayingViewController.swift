@@ -53,18 +53,14 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 // Get the array of movies
                 let movies = dataDictionary["results"] as! [[String: Any]]
-                
                 // Store the movies in a property to use elsewhere
                 self.movies = movies
-                
                 // Reload your table view data
                 self.tableView.reloadData()
-                
                 self.refreshControl.endRefreshing()
             }
         }
         task.resume()
-        
     }
     
     
